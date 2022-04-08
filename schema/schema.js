@@ -10,11 +10,20 @@ const axios = require("axios");
 const UserType = new GraphQLObjectType({
   name: "User",
   fields: {
-    id: { type: GraphQLString },
+    id: {type: GraphQLString} ,
     name: { type: GraphQLString },
     age: { type: GraphQLInt },
   },
 });
+
+const CompanyType = new GraphQLObjectType({
+  name: 'Comapny',
+  fields: {
+    id: {type: GraphQLString },
+    title: { type: GraphQLString},
+    description: { type: GraphQLString}
+  }
+})
 
 // Query for all the apis
 const RootQuery = new GraphQLObjectType({
@@ -31,6 +40,16 @@ const RootQuery = new GraphQLObjectType({
           .then((res) => res.data);
       },
     },
+    company: {
+      type: CompanyType,
+      resolve() {
+        return {
+          id: "1",
+          title: "google",
+          description: "this is the google organization"
+        }
+      }
+    }
   },
 });
 
