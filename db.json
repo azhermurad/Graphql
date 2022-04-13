@@ -1,14 +1,45 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "name": "azher ali",
-            "age": 23
-        },
-        {
-          "id": "2",
-          "name": "azher ali",
-          "age": 23
-        }
-    ]
+  "users": [
+    {
+      "name": "123",
+      "age": 5213,
+      "id": "N-eyrz9",
+      "companyId": "2"
+    },
+    {
+      "name": "azher",
+      "age": 23,
+      "id": "HlUqxma"
+    },
+    {
+      "name": "azher",
+      "age": 23,
+      "companyId": null,
+      "id": "-CFbnn_"
+    },
+    {
+      "name": "azher",
+      "age": 23,
+      "companyId": null,
+      "id": "vf2EmEA"
+    },
+    {
+      "name": "azher",
+      "age": 23,
+      "companyId": null,
+      "id": "zYymaIH"
+    }
+  ],
+  "company": [
+    {
+      "id": "1",
+      "title": "google",
+      "description": "Graphql team working"
+    },
+    {
+      "id": "2",
+      "title": "facebook",
+      "description": "Graphql team working"
+    }
+  ]
 }
